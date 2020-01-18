@@ -1,6 +1,6 @@
 Name: nfstest		
 Version: 1.0.2	 
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: NFS Testing Tool
 
 Group: Applications/System
@@ -38,6 +38,9 @@ most of the functionality is focused mainly on testing the client.
 %doc COPYING README
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.2-2
+- Mass rebuild 2013-12-27
+
 * Mon Nov  4 2013 Steve Dickson <steved@redhat.com> 1.0.2-1
 - Renamed package to nfstest
 - Initial RHEL-7 build (bz1026476)
