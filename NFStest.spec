@@ -1,5 +1,5 @@
 Name: nfstest		
-Version: 1.0.8	 
+Version: 2.1.1
 Release: 0.0%{?dist}
 Summary: NFS Testing Tool
 
@@ -31,6 +31,14 @@ most of the functionality is focused mainly on testing the client.
 %{_bindir}/nfstest_dio
 %{_bindir}/nfstest_pnfs
 %{_bindir}/nfstest_posix
+%{_bindir}/nfstest_alloc
+%{_bindir}/nfstest_file
+%{_bindir}/nfstest_interop
+%{_bindir}/nfstest_io
+%{_bindir}/nfstest_lock
+%{_bindir}/nfstest_pkt
+%{_bindir}/nfstest_sparse
+%{_bindir}/nfstest_xid
 %{_mandir}/*/*
 #For noarch packages: sitelib
 %{python_sitelib}/*
@@ -38,6 +46,9 @@ most of the functionality is focused mainly on testing the client.
 %doc COPYING README
 
 %changelog
+* Thu Jan 21 2016 Steve Dickson <steved@redhat.com> 2.1.1-0.0
+- Rebased to latest upstream release: 2.1.1 (bz 1284678)
+
 * Wed Jul 23 2014 Steve Dickson <steved@redhat.com> 1.0.8-0.0
 - rebuild for RHEL 7.1 (bz 1059490)
 
